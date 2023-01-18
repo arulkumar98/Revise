@@ -1,2 +1,9 @@
-package PACKAGE_NAME;public class OddEven {
+public class OddEven {
+    public static void main(String[] args) {
+        int num  = 10;
+
+        if ((num & 1) ==0){
+            System.out.println("even");
+        }else System.out.println("odd");
+    }
 }
