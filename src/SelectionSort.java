@@ -1,17 +1,18 @@
 import java.util.Arrays;
 public class SelectionSort {
     public static void main(String[] args) {
-        int[] arr = {55,77,55,66,8,7,5,2,-1}; //
+        int[] arr = {55,77,55,66,8,7,5,2,-1};
         SelectionSort selectionSort = new SelectionSort();
         selectionSort.sort(arr);
         System.out.println(Arrays.toString(arr));
+
 
     }
     public void sort(int []arr ){
         for (int i = 0; i < arr.length; i++) {
             int last = arr.length -i -1;
-            int maxIndex = getMax(arr,0,last);
-            swap(arr,maxIndex,last);
+            int maxIndex = getMax(arr,0,last); //1
+            swap(arr,maxIndex,last); //max 1 ,last 8
         }
     }
     public int getMax(int[] arr, int start, int end){
@@ -24,7 +25,7 @@ public class SelectionSort {
         return max;
     }
 
-    public void swap(int[] arr, int first, int last){
+    public void swap(int[] arr, int first, int last){  //f1   , l 8
         int temp = arr[first];
         arr[first] = arr[last];
         arr[last] = temp;
