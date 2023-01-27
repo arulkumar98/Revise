@@ -6,6 +6,7 @@ public class CycleSort {
         CycleSort cycleSort = new CycleSort();
         cycleSort.sort(arr);
         System.out.println(Arrays.toString(arr));
+        Arrays.sort(arr);
     }
     private void sort(int[] arr) {
         int index = 0;
